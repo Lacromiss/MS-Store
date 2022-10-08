@@ -70,7 +70,7 @@ namespace MSStoreWebApp.Areas.Manage.Controllers
                 }
 
 
-                product.ImgUrl = await product.Photo.SaveFileAsync(Path.Combine(_env.WebRootPath, "image"));
+                product.ImgUrl = await product.Photo.SaveFileAsync(Path.Combine(_env.WebRootPath, "Assest","images"));
 
 
             }

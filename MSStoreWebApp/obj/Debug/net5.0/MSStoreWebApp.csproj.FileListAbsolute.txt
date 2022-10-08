@@ -55,9 +55,7 @@ C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\MSStore
 C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\MSStoreWebApp.RazorCoreGenerate.cache
 C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
-C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
-C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\MSStoreWebApp.RazorTargetAssemblyInfo.cache

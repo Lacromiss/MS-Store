@@ -70,7 +70,13 @@ namespace MSStoreWebApp.Areas.Manage.Controllers
                 }
 
 
-                product.ImgUrl = await product.Photo.SaveFileAsync(Path.Combine(_env.WebRootPath, "Assest","images"));
+                product.ImgUrl = await product.Photo.SaveFileAsync(Path.Combine(_env.WebRootPath, "Assest","image"));
+                if (product.ImgUrl==null)
+                {
+                    ModelState.AddModelError("Photo", "xeta burdadir");
+                    return View();
+
+                }
 
 
             }
@@ -80,6 +86,7 @@ namespace MSStoreWebApp.Areas.Manage.Controllers
                 return View();
             }
 
+          
             List<ColorProduct> pc = new List<ColorProduct> ();
          
                 Color clr = _context.colors.Find(product.ColorrId);

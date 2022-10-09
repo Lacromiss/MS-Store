@@ -33,12 +33,12 @@
         <div class="slider__container">
             <div class="swiper mySwiper1">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><a href="#"><img src="~/Assest/images/slider_1.jpg" alt="slider 1"></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="~/Assest/images/slider_2.jpg" alt="slider 2"></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="~/Assest/images/slider_3.jpg" alt="slider 3"></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="~/Assest/images/slider_4.jpg" alt="slider 4"></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="~/Assest/images/slider_5.jpg" alt="slider 5"></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="~/Assest/images/slider_6.jpg" alt="slider 6"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="~/Assest/image/slider_1.jpg" alt="slider 1"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="~/Assest/image/slider_2.jpg" alt="slider 2"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="~/Assest/image/slider_3.jpg" alt="slider 3"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="~/Assest/image/slider_4.jpg" alt="slider 4"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="~/Assest/image/slider_5.jpg" alt="slider 5"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="~/Assest/image/slider_6.jpg" alt="slider 6"></a></div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -62,7 +62,7 @@
                 <div class="swiper-slide store__item show kisi saatlar">
                     <a href="product.html">
                         <div class="item__img">
-                            <img src="~/Assest/images/@item.ImgUrl" alt="watch image">
+                            <img src="~/Assest/image/@item.ImgUrl" alt="watch image">
                             <span class="addToWishlist"><i class="uil uil-heart"></i></span>
                         </div>
                     </a>
@@ -83,13 +83,13 @@
         <!-- BESTSELLER STORE BANNER SECTION -->
         <div class="store__item__banner">
             <div class="store__item__banner__img">
-                <img src="~/Assest/images/slider_1.jpg" alt="banner 1">
+                <img src="~/Assest/image/slider_1.jpg" alt="banner 1">
             </div>
             <div class="store__item__banner__img">
-                <img src="~/Assest/images/slider_2.jpg" alt="banner 2">
+                <img src="~/Assest/image/slider_2.jpg" alt="banner 2">
             </div>
             <div class="store__item__banner__img">
-                <img src="~/Assest/images/slider_3.jpg" alt="banner 3">
+                <img src="~/Assest/image/slider_3.jpg" alt="banner 3">
             </div>
         </div>
 
@@ -97,118 +97,23 @@
         <h2 class="best__seller__heading best__seller__heading__2" id="new__products">Yeni Gələnlər</h2>
         <div class="swiper mySwiper2 best__seller">
             <div class="swiper-wrapper">
+                   @foreach (var item in ViewData["neww"] as List<MSStoreWebApp.Models.Product>)
+                        {
                 <div class="swiper-slide store__item show kisi saatlar">
                     <a href="product.html">
                         <div class="item__img">
-                            <img src="~/Assest/images/watch_2.jpg" alt="watch image">
+                            <img src="~/Assest/image/@item.ImgUrl" alt="watch image">
                             <span class="addToWishlist"><i class="uil uil-heart"></i></span>
                         </div>
                     </a>
                     <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Qadın Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
+                        <h3 class="item__heading">@item.Name</h3>
+                        <p class="item__description">@item.Description</p>
+                        <small class="item__price">@item.Price AZN</small>
                         <button class="sale-button">Səbətə at</button>
                     </div>
                 </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_2.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Qadın Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_2.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Qadın Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_2.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Qadın Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_2.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Qadın Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_2.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Qadın Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_2.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Qadın Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_2.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Qadın Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
+               }
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -218,13 +123,13 @@
         <!-- NEW PRODUCTS STORE BANNER SECTION -->
         <div class="store__item__banner">
             <div class="store__item__banner__img">
-                <img src="~/Assest/images/slider_4.jpg" alt="banner 4">
+                <img src="~/Assest/image/slider_4.jpg" alt="banner 4">
             </div>
             <div class="store__item__banner__img">
-                <img src="~/Assest/images/slider_5.jpg" alt="banner 5">
+                <img src="~/Assest/image/slider_5.jpg" alt="banner 5">
             </div>
             <div class="store__item__banner__img">
-                <img src="~/Assest/images/slider_6.jpg" alt="banner 6">
+                <img src="~/Assest/image/slider_6.jpg" alt="banner 6">
             </div>
         </div>
 
@@ -232,118 +137,24 @@
         <h2 class="best__seller__heading" id="star__products">Önə Çıxanlar</h2>
         <div class="swiper mySwiper2 best__seller">
             <div class="swiper-wrapper">
+                   @foreach (var item in ViewData["first"] as List<MSStoreWebApp.Models.Product>)
+                        {
                 <div class="swiper-slide store__item show kisi saatlar">
                     <a href="product.html">
                         <div class="item__img">
-                            <img src="~/Assest/images/watch_3.jpg" alt="watch image">
+                            <img src="~/Assest/image/@item.ImgUrl" alt="watch image">
                             <span class="addToWishlist"><i class="uil uil-heart"></i></span>
                         </div>
                     </a>
                     <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Ağıllı Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
+                        <h3 class="item__heading">@item.Name</h3>
+                        <p class="item__description">@item.Description</p>
+                        <small class="item__price">@item.Price AZN</small>
                         <button class="sale-button">Səbətə at</button>
                     </div>
                 </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_3.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Ağıllı Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_3.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Ağıllı Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_3.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Ağıllı Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_3.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Ağıllı Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_3.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Ağıllı Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_3.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Ağıllı Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_3.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Ağıllı Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
+                }
+             
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -353,13 +164,13 @@
         <!-- STAR PRODUCTS STORE BANNER SECTION -->
         <div class="store__item__banner">
             <div class="store__item__banner__img">
-                <img src="~/Assest/images/slider_1.jpg" alt="banner 1">
+                <img src="~/Assest/image/slider_1.jpg" alt="banner 1">
             </div>
             <div class="store__item__banner__img">
-                <img src="~/Assest/images/slider_2.jpg" alt="banner 1">
+                <img src="~/Assest/image/slider_2.jpg" alt="banner 1">
             </div>
             <div class="store__item__banner__img">
-                <img src="~/Assest/images/slider_3.jpg" alt="banner 1">
+                <img src="~/Assest/image/slider_3.jpg" alt="banner 1">
             </div>
         </div>
 
@@ -367,118 +178,23 @@
         <h2 class="best__seller__heading best__seller__heading__1 man__watch"><span>Kişi Saatları</span> <a href="man-watch.html"><span>Hamısı</span> <i class="uil uil-angle-right"></i></a></h2>
         <div class="swiper mySwiper2 best__seller">
             <div class="swiper-wrapper">
+                   @foreach (var item in ViewData["kisi"] as List<MSStoreWebApp.Models.Product>)
+                        {
                 <div class="swiper-slide store__item show kisi saatlar">
                     <a href="product.html">
                         <div class="item__img">
-                            <img src="~/Assest/images/watch_1.jpg" alt="watch image">
+                            <img src="~/Assest/image/@item.ImgUrl" alt="watch image">
                             <span class="addToWishlist"><i class="uil uil-heart"></i></span>
                         </div>
                     </a>
                     <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Kişi Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
+                        <h3 class="item__heading">/@item.Name</h3>
+                        <p class="item__description">/@item.Description</p>
+                        <small class="item__price">@item.Price AZN</small>
                         <button class="sale-button">Səbətə at</button>
                     </div>
                 </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_1.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Kişi Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_1.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Kişi Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_1.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Kişi Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_1.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Kişi Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_1.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Kişi Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_1.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Kişi Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_1.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Kişi Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
+            }
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -489,118 +205,23 @@
         <h2 class="best__seller__heading best__seller__heading__2 woman__watch"><span>Qadın Saatları</span> <a href="woman-watch.html"><span>Hamısı</span> <i class="uil uil-angle-right"></i></a></h2>
         <div class="swiper mySwiper2 best__seller">
             <div class="swiper-wrapper">
+                   @foreach (var item in ViewData["qadin"] as List<MSStoreWebApp.Models.Product>)
+                        {
                 <div class="swiper-slide store__item show kisi saatlar">
                     <a href="product.html">
                         <div class="item__img">
-                            <img src="~/Assest/images/watch_2.jpg" alt="watch image">
+                            <img src="~/Assest/image/watch_2.jpg" alt="watch image">
                             <span class="addToWishlist"><i class="uil uil-heart"></i></span>
                         </div>
                     </a>
                     <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Qadın Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
+                        <h3 class="item__heading">@item.Name</h3>
+                        <p class="item__description">@item.Description</p>
+                        <small class="item__price">@item.Products AZN</small>
                         <button class="sale-button">Səbətə at</button>
                     </div>
                 </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_2.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Qadın Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_2.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Qadın Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_2.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Qadın Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_2.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Qadın Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_2.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Qadın Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_2.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Qadın Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_2.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Qadın Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
+              }
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -611,118 +232,23 @@
         <h2 class="best__seller__heading best__seller__heading__3 smart__watch"><span>Smart Saatlar</span> <a href="smart-watch.html"><span>Hamısı</span> <i class="uil uil-angle-right"></i></a></h2>
         <div class="swiper mySwiper2 best__seller">
             <div class="swiper-wrapper">
+                  @foreach (var item in ViewData["smart"] as List<MSStoreWebApp.Models.Product>)
+                        {
                 <div class="swiper-slide store__item show kisi saatlar">
                     <a href="product.html">
                         <div class="item__img">
-                            <img src="~/Assest/images/watch_3.jpg" alt="watch image">
+                            <img src="~/Assest/image/@item.ImgUrl" alt="watch image">
                             <span class="addToWishlist"><i class="uil uil-heart"></i></span>
                         </div>
                     </a>
                     <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Ağıllı Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
+                        <h3 class="item__heading">@item.Name</h3>
+                        <p class="item__description">@item.Description</p>
+                        <small class="item__price">@item.Price AZN</small>
                         <button class="sale-button">Səbətə at</button>
                     </div>
                 </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_3.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Ağıllı Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_3.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Ağıllı Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_3.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Ağıllı Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_3.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Ağıllı Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_3.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Ağıllı Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_3.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Ağıllı Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
-                <div class="swiper-slide store__item show kisi saatlar">
-                    <a href="product.html">
-                        <div class="item__img">
-                            <img src="~/Assest/images/watch_3.jpg" alt="watch image">
-                            <span class="addToWishlist"><i class="uil uil-heart"></i></span>
-                        </div>
-                    </a>
-                    <div class="item__info">
-                        <h3 class="item__heading">Guess</h3>
-                        <p class="item__description">GUW1107G1 Ağıllı Qol Saatı</p>
-                        <small class="item__price">12 AZN</small>
-                        <button class="sale-button">Səbətə at</button>
-                    </div>
-                </div>
+           }
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>

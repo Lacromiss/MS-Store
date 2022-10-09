@@ -25,6 +25,11 @@ namespace MSStoreWebApp.Controllers
         {
 
             ViewData["BestSteller"] = _context.products.Where(x=>x.BestId==1).ToList();
+            ViewData["neww"] = _context.products.Where(x=>x.BestId==2).ToList();
+            ViewData["first"] = _context.products.Where(x=>x.BestId==3).ToList();
+            ViewData["kisi"] = _context.products.Where(x=>x.GenderId==1).ToList();
+            ViewData["qadin"] = _context.products.Where(x=>x.GenderId==2).ToList();
+            ViewData["smart"] = _context.products.Where(x=>x.CatagoryId==2).ToList();
             return View();
         }
 

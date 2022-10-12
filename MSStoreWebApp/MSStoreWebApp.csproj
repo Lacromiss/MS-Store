@@ -17,7 +17,8 @@
   <ItemGroup>
     <Folder Include="Areas\Manage\Data\" />
     <Folder Include="Areas\Manage\Models\" />
-    <Folder Include="wwwroot\image\" />
+    <Folder Include="wwwroot\AdminPanel\vendor\font-awesome\less\" />
+    <Folder Include="wwwroot\AdminPanel\vendor\font-awesome\scss\" />
   </ItemGroup>
 
 </Project>

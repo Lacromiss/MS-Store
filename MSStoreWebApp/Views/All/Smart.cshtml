@@ -1,0 +1,185 @@
+﻿
+@{
+    ViewData["Title"] = "Smart";
+}
+
+<!-- FILTER SECTION -->
+<section class="filter">
+    <div class="container">
+        <div class="filter__container">
+            <!-- <div class="buttons">
+                <p class="filter-value"><i class="uil uil-filter"></i> Filtirlə</p>
+                <button class="button-value" onclick="filterProduct('Bütün məhsullar')">Bütün məhsullar</button>
+                <button class="button-value" onclick="filterProduct('saatlar')">Saatlar</button>
+                <button class="button-value" onclick="filterProduct('pulqabilar')">Pulqabılar</button>
+                <button class="button-value" onclick="filterProduct('ətirlər')">Ətirlər</button>
+            </div> -->
+            <div class="filter__buttons">
+                <p class="filter-value"><i class="uil uil-filter"></i> <span>Filtirlə</span></p>
+                <div class="filter__button">
+                    <div class="filter__button__head" onclick="filterButton('markalar')">
+                        Markalar <i class="uil uil-angle-down markalar"></i>
+                    </div>
+                    <div class="filter__button__body markalar">
+                        <ul class="filter__list">
+                            <li class="filter__list__item"><a class="filter__list__value tissot" href="#" onclick="filterButtonItem('tissot')">TISSOT</a></li>
+                            <li class="filter__list__item"><a class="filter__list__value tenwei" href="#" onclick="filterButtonItem('tenwei')">Tenwei</a></li>
+                            <li class="filter__list__item"><a class="filter__list__value calvinKlein" href="#" onclick="filterButtonItem('calvinKlein')">Calvin Klein</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter__button">
+                    <div class="filter__button__head" onclick="filterButton('qiymet')">
+                        Qiymət <i class="uil uil-angle-down qiymet"></i>
+                    </div>
+                    <div class="filter__button__body qiymet">
+                        <ul class="filter__list">
+                            <li class="filter__list__item"><a class="filter__list__value" href="#">1 AZN - 12 AZN</a></li>
+                            <li class="filter__list__item"><a class="filter__list__value" href="#">12 AZN - 24 AZN</a></li>
+                            <li class="filter__list__item"><a class="filter__list__value" href="#">24 AZN - 36 AZN</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter__button">
+                    <div class="filter__button__head" onclick="filterButton('reng')">
+                        Rəng <i class="uil uil-angle-down reng"></i>
+                    </div>
+                    <div class="filter__button__body reng">
+                        <ul class="filter__list">
+                            <li class="filter__list__item"><a class="filter__list__value" href="#">Ağ</a></li>
+                            <li class="filter__list__item"><a class="filter__list__value" href="#">Qızılı rəng</a></li>
+                            <li class="filter__list__item"><a class="filter__list__value" href="#">Palıdı rəng</a></li>
+                            <li class="filter__list__item"><a class="filter__list__value" href="#">Qara</a></li>
+                            <li class="filter__list__item"><a class="filter__list__value" href="#">Yaşıl</a></li>
+                            <li class="filter__list__item"><a class="filter__list__value" href="#">Mavi</a></li>
+                            <li class="filter__list__item"><a class="filter__list__value" href="#">Qırmızı</a></li>
+                            <li class="filter__list__item"><a class="filter__list__value" href="#">Sarı</a></li>
+                            <li class="filter__list__item"><a class="filter__list__value" href="#">Çəhrayı</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STORE SECTION -->
+<section class="store">
+    <div class="container store__container">
+        <h2 class="best__seller__heading best__seller__heading__3">Smart Saatlar</h2>
+        <div class="best__seller">
+            <div class="store__item show kisi saatlar">
+                <a href="product.html">
+                    <div class="item__img">
+                        <img src="~/Assest/image/watch_3.jpg" alt="watch image">
+                        <span class="addToWishlist"><i class="uil uil-heart"></i></span>
+                    </div>
+                </a>
+                <div class="item__info">
+                    <h3 class="item__heading">Guess</h3>
+                    <p class="item__description">GUW1107G1 Smart Qol Saatı</p>
+                    <small class="item__price">12 AZN</small>
+                    <button class="sale-button">Səbətə at</button>
+                </div>
+            </div>
+            <div class="store__item show kisi saatlar">
+                <a href="product.html">
+                    <div class="item__img">
+                        <img src="~/Assest/image/watch_3.jpg" alt="watch image">
+                        <span class="addToWishlist"><i class="uil uil-heart"></i></span>
+                    </div>
+                </a>
+                <div class="item__info">
+                    <h3 class="item__heading">Guess</h3>
+                    <p class="item__description">GUW1107G1 Smart Qol Saatı</p>
+                    <small class="item__price">12 AZN</small>
+                    <button class="sale-button">Səbətə at</button>
+                </div>
+            </div>
+            <div class="store__item show kisi saatlar">
+                <a href="product.html">
+                    <div class="item__img">
+                        <img src="~/Assest/image/watch_3.jpg" alt="watch image">
+                        <span class="addToWishlist"><i class="uil uil-heart"></i></span>
+                    </div>
+                </a>
+                <div class="item__info">
+                    <h3 class="item__heading">Guess</h3>
+                    <p class="item__description">GUW1107G1 Smart Qol Saatı</p>
+                    <small class="item__price">12 AZN</small>
+                    <button class="sale-button">Səbətə at</button>
+                </div>
+            </div>
+            <div class="store__item show kisi saatlar">
+                <a href="product.html">
+                    <div class="item__img">
+                        <img src="~/Assest/image/watch_3.jpg" alt="watch image">
+                        <span class="addToWishlist"><i class="uil uil-heart"></i></span>
+                    </div>
+                </a>
+                <div class="item__info">
+                    <h3 class="item__heading">Guess</h3>
+                    <p class="item__description">GUW1107G1 Smart Qol Saatı</p>
+                    <small class="item__price">12 AZN</small>
+                    <button class="sale-button">Səbətə at</button>
+                </div>
+            </div>
+            <div class="store__item show kisi saatlar">
+                <a href="product.html">
+                    <div class="item__img">
+                        <img src="~/Assest/image/watch_3.jpg" alt="watch image">
+                        <span class="addToWishlist"><i class="uil uil-heart"></i></span>
+                    </div>
+                </a>
+                <div class="item__info">
+                    <h3 class="item__heading">Guess</h3>
+                    <p class="item__description">GUW1107G1 Smart Qol Saatı</p>
+                    <small class="item__price">12 AZN</small>
+                    <button class="sale-button">Səbətə at</button>
+                </div>
+            </div>
+            <div class="store__item show kisi saatlar">
+                <a href="product.html">
+                    <div class="item__img">
+                        <img src="~/Assest/image/watch_3.jpg" alt="watch image">
+                        <span class="addToWishlist"><i class="uil uil-heart"></i></span>
+                    </div>
+                </a>
+                <div class="item__info">
+                    <h3 class="item__heading">Guess</h3>
+                    <p class="item__description">GUW1107G1 Smart Qol Saatı</p>
+                    <small class="item__price">12 AZN</small>
+                    <button class="sale-button">Səbətə at</button>
+                </div>
+            </div>
+            <div class="store__item show kisi saatlar">
+                <a href="product.html">
+                    <div class="item__img">
+                        <img src="~/Assest/image/watch_3.jpg" alt="watch image">
+                        <span class="addToWishlist"><i class="uil uil-heart"></i></span>
+                    </div>
+                </a>
+                <div class="item__info">
+                    <h3 class="item__heading">Guess</h3>
+                    <p class="item__description">GUW1107G1 Smart Qol Saatı</p>
+                    <small class="item__price">12 AZN</small>
+                    <button class="sale-button">Səbətə at</button>
+                </div>
+            </div>
+            <div class="store__item show kisi saatlar">
+                <a href="product.html">
+                    <div class="item__img">
+                        <img src="~/Assest/image/watch_3.jpg" alt="watch image">
+                        <span class="addToWishlist"><i class="uil uil-heart"></i></span>g
+                    </div>
+                </a>
+                <div class="item__info">
+                    <h3 class="item__heading">Guess</h3>
+                    <p class="item__description">GUW1107G1 Smart Qol Saatı</p>
+                    <small class="item__price">12 AZN</small>
+                    <button class="sale-button">Səbətə at</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

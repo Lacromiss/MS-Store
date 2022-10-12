@@ -148,3 +148,6 @@ C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\A
 C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Areas\Manage\Views\Product\Index.cshtml.g.cs
 C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Areas\Manage\Views\Product\Create.cshtml.g.cs
 C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Areas\Manage\Views\Product\Update.cshtml.g.cs
+C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Views\All\Index.cshtml.g.cs
+C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Views\All\Smart.cshtml.g.cs
+C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Views\All\Girl.cshtml.g.cs

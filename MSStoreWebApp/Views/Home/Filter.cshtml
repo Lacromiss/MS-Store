@@ -1,0 +1,45 @@
+﻿@using MSStoreWebApp.Vm
+@model Product
+
+@{
+    ViewData["Title"] = "Filter";
+    Layout = null;
+}
+<form method="post" id="filter-form" action="Filterr">
+
+
+    <select name="priceRange" id="price-range">
+
+        <option value="">Sec</option>
+        <option value="10-20">10-20</option>
+        <option value="20-30">20-30</option>
+        <option value="40-50">40-50</option>
+    </select>
+    <label>Color:</label>
+    <div class="form-group">
+        <select name="ColorrId" asp-items="ViewBag.colora" id="color-dropdown">
+            <option>Color</option>
+        </select>
+    </div>
+</form>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js">
+       
+
+</script>
+<script>
+    function filter() {
+        var form = document.getElementById('filter-form');
+        form.submit();
+    }
+
+    document.getElementById('color-dropdown').onclick = filter;
+    document.getElementById("price-range").addEventListener("change", function () {
+        if (this.value !== "") {
+            document.getElementById('filter-form').submit();
+        }
+    });
+</script>
+
+
+
+

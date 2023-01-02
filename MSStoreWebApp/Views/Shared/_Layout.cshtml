@@ -23,16 +23,16 @@
                     <button><i class="uil uil-bars"></i></button>
                 </div>
                 <div class="logo">
-                    <a href="index.html">ms store</a>
+                    <a asp-action="Index" asp-controller="Home">ms store</a>
                 </div>
                 <div class="nav__bgOverlay"></div>
                 <ul class="menu">
                     <div class="logo">
-                        <a href="index.html">ms store</a>
+                        <a asp-action="Index" asp-controller="Home">ms store</a>
                     </div>
-                    <li class="menu-item"><a href="man-watch.html"><div class="menu-item-left"><i class="uil uil-watch-alt"></i> <span>KİŞİ SAATLARI</span></div> <div class="menu-item-right"><i class="uil uil-angle-right"></i></div></a></li>
-                    <li class="menu-item"><a href="woman-watch.html"><div class="menu-item-left"><i class="uil uil-watch-alt"></i> <span>QADIN SAATLARI</span></div> <div class="menu-item-right"><i class="uil uil-angle-right"></i></div></a></li>
-                    <li class="menu-item"><a href="smart-watch.html"><div class="menu-item-left"><i class="uil uil-watch-alt"></i> <span>SMART SAATLAR</span></div> <div class="menu-item-right"><i class="uil uil-angle-right"></i></div></a></li>
+                    <li class="menu-item"><a asp-action="Index" asp-controller="All" ><div class="menu-item-left"><i class="uil uil-watch-alt"></i> <span>KİŞİ SAATLARI</span></div> <div class="menu-item-right"><i class="uil uil-angle-right"></i></div></a></li>
+                    <li class="menu-item"><a asp-action ="Girl" asp-controller="All" ><div class="menu-item-left"><i class="uil uil-watch-alt"></i> <span>QADIN SAATLARI</span></div> <div class="menu-item-right"><i class="uil uil-angle-right"></i></div></a></li>
+                    <li class="menu-item"><a asp-action="Smart" asp-controller="All"><div class="menu-item-left"><i class="uil uil-watch-alt"></i> <span>SMART SAATLAR</span></div> <div class="menu-item-right"><i class="uil uil-angle-right"></i></div></a></li>
                     <div class="login-item">
                         <a href="#"><i class="uil uil-user"></i> Qeydiyyatdan Keç / Daxil Ol </a>
                     </div>
@@ -139,6 +139,7 @@
             </p>
         </div>
     </div>
+
 
     <!-- Javascript -->
     <script src="~/Assest/main.js"></script>

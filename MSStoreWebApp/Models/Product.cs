@@ -12,6 +12,8 @@ namespace MSStoreWebApp.Models
         public string Description { get; set; }
         public string ImgUrl { get; set; }
         public double Price { get; set; }
+        public double PriceFrom { get; set; }
+
         public int CatagoryId { get; set; }
         public Catagory Catagory { get; set; }
         public int GenderId { get; set; }

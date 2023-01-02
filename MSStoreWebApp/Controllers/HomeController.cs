@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using MSStoreWebApp.Dal;
 using MSStoreWebApp.Models;
@@ -19,22 +21,58 @@ namespace MSStoreWebApp.Controllers
 
             _context = context;
         }
-      
+
 
         public IActionResult Index()
         {
 
-            ViewData["BestSteller"] = _context.products.Where(x=>x.BestId==1).ToList();
-            ViewData["neww"] = _context.products.Where(x=>x.BestId==2).ToList();
-            ViewData["first"] = _context.products.Where(x=>x.BestId==3).ToList();
-            ViewData["kisi"] = _context.products.Where(x=>x.GenderId==1).ToList();
-            ViewData["qadin"] = _context.products.Where(x=>x.GenderId==2).ToList();
-            ViewData["smart"] = _context.products.Where(x=>x.CatagoryId==2).ToList();
+            ViewData["BestSteller"] = _context.products.Where(x => x.BestId == 1).ToList();
+            ViewData["neww"] = _context.products.Where(x => x.BestId == 2).ToList();
+            ViewData["first"] = _context.products.Where(x => x.BestId == 3).ToList();
+            ViewData["kisi"] = _context.products.Where(x => x.GenderId == 3).ToList();
+            ViewData["qadin"] = _context.products.Where(x => x.GenderId == 4).ToList();
+            ViewData["smart"] = _context.products.Where(x => x.CatagoryId == 2).ToList();
+
             return View();
         }
+        public ActionResult Filter()
+        {
+            ViewBag.colora = new SelectList(_context.colors.ToList(), "Id", "Name");
 
-     
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Filterr(string priceRange, int ColorrId)
+        {
+            ViewBag.colora = new SelectList(_context.colors.ToList(), "Id", "Name");
 
-     
+            var products = _context.products.AsQueryable();
+
+            if (!string.IsNullOrEmpty(priceRange))
+            {
+                string[] range = priceRange.Split('-');
+                double min = double.Parse(range[0]);
+                double max = double.Parse(range[1]);
+                products = products.Where(p => p.Price >= min && p.Price <= max);
+            }
+            if (ColorrId != 0)
+            {
+                int colorId = ColorrId;
+
+             
+                    products = products.Where(p => p.ColorrId == colorId);
+
+                
+            }
+          
+
+            return View(products.ToList());
+        }
+
+            public IActionResult FilterNetice()
+        {
+          
+            return View();
+        }
     }
 }

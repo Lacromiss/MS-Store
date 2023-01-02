@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- Filtreleme formu -->
+<form id="filter-form">
+    <!-- Renkleri seçen bir seçim kutusu -->
+    <label for="colors">Renkler:</label>
+    <select id="colors" multiple>
+        <option value="Kırmızı">Kırmızı</option>
+        <option value="Mavi">Mavi</option>
+        <option value="Yeşil">Yeşil</option>
+        <!-- Diğer renkler -->
+    </select>
+    <br>
+    <!-- Fiyat aralığını seçen iki girdi kutusu -->
+    <label for="min-price">Minimum fiyat:</label>
+    <input type="number" id="min-price" min="0" step="1">
+    <br>
+    <label for="max-price">Maksimum fiyat:</label>
+    <input type="number" id="max-price" min="0" step="1">
+    <br>
+    <!-- Filtrelemeyi başlatan bir düğme -->
+    <button type="submit">Filtrele</button>
+
+</form>
+
+<div id="filtered-products"></div>
+
+
+
+    
+<script src="./Ajaxxx.js"></script>
+<script src="./jquery-3.6.3.min.js"></script>
+
+</body>
+</html>

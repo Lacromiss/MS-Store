@@ -8,6 +8,10 @@ namespace MSStoreWebApp.Areas.Manage.Controllers
         public IActionResult Index()
         {
             return View();
+        } 
+        public IActionResult Indexx()
+        {
+            return View();
         }
     }
 }

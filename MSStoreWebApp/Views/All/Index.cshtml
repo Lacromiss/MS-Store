@@ -1,4 +1,4 @@
-﻿
+﻿@model List<Product>
 @{
     ViewData["Title"] = "Index";
 }
@@ -63,35 +63,49 @@
     <div class="container store__container">
         <h2 class="best__seller__heading best__seller__heading__3">Kişi Saatları</h2>
         <div class="best__seller">
-            <div class="store__item show black tissot 1-12">
+            @foreach (var item in Model)
+           {
+               
+           
+            <div class="store__item show">
                 <a href="product.html">
                     <div class="item__img">
-                        <img src="~/Assest/image/watch_1.jpg" alt="watch image">
+                        <img src="~/Assest/image/@item.ImgUrl" alt="watch image">
                         <span class="addToWishlist"><i class="uil uil-heart"></i></span>
                     </div>
                 </a>
                 <div class="item__info">
-                    <h3 class="item__heading">Guess</h3>
-                    <p class="item__description">GUW1107G1 Qara Kişi Qol Saatı</p>
-                    <small class="item__price">12 AZN</small>
+                    <h3 class="item__heading">@item.Name</h3>
+                    <p class="item__description">@item.Description</p>
+                    <small class="item__price">@item.Price AZN</small>
                     <button class="sale-button">Səbətə at</button>
                 </div>
             </div>
-            <div class="store__item show white tissot 12-24">
+            }
+            @foreach (var item in ViewData["orta"] as List<MSStoreWebApp.Models.Product>)
+           {
+
+            
+            <div class="store__item show  12-24">
                 <a href="product.html">
                     <div class="item__img">
-                        <img src="~/Assest/image/watch_1.jpg" alt="watch image">
+                        <img src="~/Assest/image/@item.ImgUrl" alt="watch image">
                         <span class="addToWishlist"><i class="uil uil-heart"></i></span>
                     </div>
                 </a>
                 <div class="item__info">
                     <h3 class="item__heading">Guess</h3>
-                    <p class="item__description">GUW1107G1 Ağ Kişi Qol Saatı</p>
-                    <small class="item__price">24 AZN</small>
+                    <p class="item__description">@item.Name</p>
+                    <small class="item__price">@item.Price AZN</small>
                     <button class="sale-button">Səbətə at</button>
                 </div>
             </div>
-            <div class="store__item show gold tissot 24-36">
+
+            }
+                 @foreach (var item in ViewData["ag"] as List<MSStoreWebApp.Models.Product>)
+           {
+
+            <div class="store__item show white ">
                 <a href="product.html">
                     <div class="item__img">
                         <img src="~/Assest/image/watch_1.jpg" alt="watch image">
@@ -99,12 +113,13 @@
                     </div>
                 </a>
                 <div class="item__info">
-                    <h3 class="item__heading">Guess</h3>
+                    <h3 class="item__heading">@item.Name</h3>
                     <p class="item__description">GUW1107G1 Qızılı Kişi Qol Saatı</p>
                     <small class="item__price">36 AZN</small>
                     <button class="sale-button">Səbətə at</button>
                 </div>
             </div>
+            }
             <div class="store__item show silver tissot 1-12">
                 <a href="product.html">
                     <div class="item__img">

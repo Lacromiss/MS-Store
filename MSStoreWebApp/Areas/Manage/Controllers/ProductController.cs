@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using MSStoreWebApp.Dal;
 using MSStoreWebApp.Models;
 using MSStoreWebApp.Utilites;
+using MSStoreWebApp.Vm;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -26,8 +27,14 @@ namespace MSStoreWebApp.Areas.Manage.Controllers
         }
         public IActionResult Index()
         {
-           List< Product> product = _context.products.ToList();
-            return View(product);
+            ProductCatagoryGenderVm productCatagoryGenderVm = new ProductCatagoryGenderVm()
+            {
+                Catagories = _context.catagories.ToList(),
+                Genders = _context.genders.ToList(),
+                Products = _context.products.ToList(),
+                ColorProducts = _context.colorProducts.ToList()
+            };
+            return View(productCatagoryGenderVm);
         }
         public IActionResult Create()
         {

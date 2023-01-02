@@ -146,6 +146,9 @@ namespace MSStoreWebApp.Migrations
                     b.Property<double>("Price")
                         .HasColumnType("float");
 
+                    b.Property<double>("PriceFrom")
+                        .HasColumnType("float");
+
                     b.HasKey("Id");
 
                     b.HasIndex("BestId");

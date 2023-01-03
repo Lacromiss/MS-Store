@@ -53,7 +53,6 @@ C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\staticw
 C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\MSStoreWebApp.TagHelpers.input.cache
 C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\MSStoreWebApp.TagHelpers.output.cache
 C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\MSStoreWebApp.RazorCoreGenerate.cache
-C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
@@ -154,3 +153,5 @@ C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\A
 C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Views\Home\Filter.cshtml.g.cs
 C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Views\Home\FilterNetice.cshtml.g.cs
 C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Views\Home\Filterr.cshtml.g.cs
+C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Views\PostOne.cshtml.g.cs
+C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Views\Home\_PostOnee.cshtml.g.cs

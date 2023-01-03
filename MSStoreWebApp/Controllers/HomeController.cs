@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using MSStoreWebApp.Dal;
 using MSStoreWebApp.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -14,6 +15,8 @@ namespace MSStoreWebApp.Controllers
 {
     public class HomeController : Controller
     {
+        List<Product> products1;
+        
         private readonly AppDbContext _context;
 
         public HomeController(AppDbContext context)
@@ -22,7 +25,7 @@ namespace MSStoreWebApp.Controllers
             _context = context;
         }
 
-
+        
         public IActionResult Index()
         {
 
@@ -64,15 +67,33 @@ namespace MSStoreWebApp.Controllers
 
                 
             }
-          
+            string data= JsonConvert.SerializeObject(products);
 
-            return View(products.ToList());
+            TempData["products"] = data;
+
+            return RedirectToAction(nameof(FilterNetice));
         }
 
             public IActionResult FilterNetice()
         {
-          
-            return View();
+            ViewBag.colora = new SelectList(_context.colors.ToList(), "Id", "Name");
+            if (TempData["products"] != null)
+            {
+                var pro = TempData["products"].ToString();
+                List<Product> pro7 = JsonConvert.DeserializeObject<List<Product>>(pro);
+             
+                    return View(pro7);
+
+
+                
+            }
+           
+           
+            else
+            {
+                
+                return View(_context.products.ToList());
+            }
         }
     }
 }

@@ -131,6 +131,9 @@ namespace MSStoreWebApp.Migrations
                     b.Property<int>("ColorrId")
                         .HasColumnType("int");
 
+                    b.Property<int>("Count")
+                        .HasColumnType("int");
+
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 

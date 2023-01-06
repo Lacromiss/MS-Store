@@ -1,0 +1,16 @@
+﻿@model List<Product>
+@{
+    ViewData["Title"] = "AddToCart";
+    Layout = null;
+}
+
+<form action="/All/AddToCart" method="post">
+    @foreach (var product in Model)
+    {
+        <div>
+          
+            <button type="submit" name="productId" value="@product.Id">Sepete Ekle</button>
+        </div>
+    }
+
+</form>

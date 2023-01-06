@@ -155,3 +155,5 @@ C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\V
 C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Views\Home\Filterr.cshtml.g.cs
 C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Views\PostOne.cshtml.g.cs
 C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Views\Home\_PostOnee.cshtml.g.cs
+C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Views\All\AddToCart.cshtml.g.cs
+C:\Users\lacro\source\repos\MSStoreWebApp\MSStoreWebApp\obj\Debug\net5.0\Razor\Views\All\ViewCart.cshtml.g.cs

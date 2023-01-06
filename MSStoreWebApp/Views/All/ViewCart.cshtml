@@ -1,0 +1,17 @@
+﻿@model List<Product>
+@{
+    ViewData["Title"] = "ViewCart";
+    Layout = null;
+}
+
+@foreach (var item in Model)
+{
+    <h1>
+        @item.Name
+    </h1>
+    <h1>
+        @item.Count
+    </h1>
+    <h1><a asp-action="Topla" asp-controller="All" asp-route-pirt="@item.Id">Topla</a></h1>
+    <h1><a asp-action="Cix" asp-controller="All" asp-route-Id="@item.Id">Cix</a></h1>
+}

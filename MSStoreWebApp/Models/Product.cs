@@ -24,6 +24,7 @@ namespace MSStoreWebApp.Models
         public IFormFile Photo { get; set; }
         public int BestId { get; set; }
         public Best Best { get; set; }
+        public int Count { get; set; }
 
 
     }
